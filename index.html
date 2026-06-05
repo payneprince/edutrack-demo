@@ -25,7 +25,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#f8fafc;overflow:hidd
 .sb-nav{flex:1;padding:6px 10px;overflow-y:auto}
 .sb-nav::-webkit-scrollbar{display:none}
 .sb-section{font-size:9px;font-weight:700;color:rgba(255,255,255,.22);text-transform:uppercase;letter-spacing:.1em;padding:10px 8px 5px}
-.nav-btn{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;cursor:pointer;margin-bottom:2px;color:rgba(255,255,255,.45);font-size:13px;font-weight:500;transition:all .15s;border:none;background:transparent;font-family:inherit}
+.nav-btn{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:10px;cursor:pointer;margin-bottom:2px;color:rgba(255,255,255,.45);font-size:13px;font-weight:500;transition:all .15s;border:none;background:none;font-family:inherit}
 .nav-btn:hover{background:rgba(255,255,255,.06);color:rgba(255,255,255,.8)}
 .nav-btn.active{background:#6366f1;color:#fff;box-shadow:0 4px 12px rgba(99,102,241,.3)}
 .nav-badge{font-size:9px;font-weight:700;padding:1px 6px;border-radius:99px;background:rgba(255,255,255,.12);margin-left:auto}
@@ -101,65 +101,8 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:#f8fafc;overflow:hidd
 .event-month{font-size:9px;color:rgba(255,255,255,.7);text-transform:uppercase;font-weight:600;margin-top:1px}
 .event-title{font-size:13px;font-weight:600;color:#0f172a;margin-bottom:2px}
 .event-meta{font-size:11px;color:#94a3b8}
-.ai-wrap{display:flex;gap:16px;height:calc(100vh - 180px)}
-.ai-sidebar{width:220px;flex-shrink:0;display:flex;flex-direction:column;gap:12px}
-.ai-chat{flex:1;display:flex;flex-direction:column;background:#fff;border:1px solid #f1f5f9;border-radius:16px;overflow:hidden}
-.ai-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
-.msg-ai{display:flex;gap:8px;align-items:flex-start}
-.msg-ai-bubble{background:#f1f5f9;border-radius:14px 14px 14px 2px;padding:10px 14px;font-size:13px;color:#334155;line-height:1.6;max-width:85%}
-.msg-user{display:flex;justify-content:flex-end}
-.msg-user-bubble{background:#6366f1;border-radius:14px 14px 2px 14px;padding:10px 14px;font-size:13px;color:#fff;line-height:1.6;max-width:85%}
-.ai-input{display:flex;gap:8px;padding:12px 16px;border-top:1px solid #f1f5f9}
-.ai-input input{flex:1;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px 14px;font-size:13px;outline:none;font-family:inherit}
-.ai-send{width:40px;height:40px;background:#6366f1;border:none;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s}
-.ai-send:hover{background:#4f46e5}
-.msg-wrap{display:flex;gap:16px;height:calc(100vh - 180px)}
-.msg-list-panel{width:280px;flex-shrink:0;background:#fff;border:1px solid #f1f5f9;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.msg-search{padding:14px;border-bottom:1px solid #f8fafc}
-.msg-list{overflow-y:auto;flex:1}
-.msg-item{display:flex;gap:10px;align-items:start;padding:14px;cursor:pointer;border-bottom:1px solid #fafafa;transition:background .12s}
-.msg-item:hover,.msg-item.active{background:#f0f0ff}
-.msg-item-name{font-size:13px;font-weight:600;color:#0f172a}
-.msg-item-role{font-size:10px;color:#94a3b8;margin-bottom:2px}
-.msg-item-last{font-size:12px;color:#64748b;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.msg-item-time{font-size:10px;color:#94a3b8;flex-shrink:0;margin-left:auto}
-.msg-unread{width:18px;height:18px;background:#6366f1;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;font-weight:700;flex-shrink:0;margin-top:2px}
-.chat-panel{flex:1;background:#fff;border:1px solid #f1f5f9;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.chat-header{padding:14px 16px;border-bottom:1px solid #f1f5f9;display:flex;align-items:center;gap:10px}
-.chat-header-name{font-size:14px;font-weight:700;color:#0f172a}
-.chat-header-role{font-size:11px;color:#94a3b8}
-.chat-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
-.chat-input{display:flex;gap:8px;padding:12px 16px;border-top:1px solid #f1f5f9}
-.chat-input input{flex:1;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px 14px;font-size:13px;outline:none;font-family:inherit}
-.ann-item{padding:16px;border-left:4px solid #6366f1;background:#f8fafc;border-radius:0 12px 12px 0;margin-bottom:12px}
-.ann-item.urgent{border-left-color:#ef4444;background:#fff5f5}
-.ann-item.info{border-left-color:#f59e0b;background:#fffbeb}
-.ann-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:4px}
-.ann-body{font-size:13px;color:#64748b;line-height:1.6;margin-bottom:8px}
-.ann-meta{font-size:11px;color:#94a3b8;display:flex;gap:12px}
-.tt-item{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;background:#f8fafc;margin-bottom:6px}
-.tt-bar{width:3px;height:40px;border-radius:99px;flex-shrink:0}
-.tt-subject{font-size:13px;font-weight:700;color:#0f172a}
-.tt-info{font-size:11px;color:#94a3b8}
-.tt-time{font-size:12px;font-weight:700;color:#64748b;margin-left:auto}
-.ring-wrap{position:relative;width:130px;height:130px;flex-shrink:0}
-.ring-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
-.ring-pct{font-size:26px;font-weight:800;color:#0f172a;line-height:1}
-.ring-sub{font-size:11px;color:#94a3b8}
-.fee-row{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#fff5f5;border-radius:12px;border:1px solid #fecaca;margin-bottom:8px}
-.fee-ov{font-size:13px;font-weight:700;color:#dc2626}
-.fee-days{font-size:11px;color:#94a3b8}
-.qp-btn{display:block;width:100%;text-align:left;font-size:12px;color:#64748b;padding:7px 10px;border-radius:8px;border:none;background:none;cursor:pointer;font-family:inherit;transition:all .12s;line-height:1.4}
-.qp-btn:hover{background:#f0f0ff;color:#6366f1}
 @keyframes slideUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .slide-up{animation:slideUp .3s ease}
-.profile-card{background:#fff;border:1px solid #f1f5f9;border-radius:16px;padding:24px;max-width:640px}
-.form-group{margin-bottom:16px}
-.form-label{font-size:11px;font-weight:700;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;display:block}
-.form-input{width:100%;border:1px solid #e2e8f0;border-radius:10px;padding:10px 14px;font-size:13px;outline:none;font-family:inherit;color:#0f172a;transition:border-color .15s}
-.form-input:focus{border-color:#6366f1}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.parent-hero{background:linear-gradient(135deg,#4f46e5,#6366f1);border-radius:16px;padding:20px 24px;margin-bottom:20px;display:flex;align-items:center;gap:16px;color:#fff}
 </style>
 </head>
 <body>
@@ -176,9 +119,10 @@ const SUBS=['Mathematics','English Language','Integrated Science','Social Studie
 const rnd=(a,b)=>Math.floor(Math.random()*(b-a+1))+a;
 const pick=a=>a[rnd(0,a.length-1)];
 const fullName=()=>pick(GF)+' '+pick(GL);
+const getColor=n=>C8[Math.abs(n.charCodeAt(0))%8];
 
-const STUDS=Array.from({length:50},(_,i)=>({id:'STU-'+String(i+1).padStart(4,'0'),name:fullName(),cls:pick(CLS),age:rnd(13,18),att:rnd(72,99),gpa:(rnd(55,98)/10).toFixed(1),fees:pick(['Paid','Paid','Paid','Partial','Overdue']),color:C8[i%8]}));
-const TCHS=Array.from({length:15},(_,i)=>({id:'TCH-'+String(i+1).padStart(3,'0'),name:fullName(),subj:SUBS[i%SUBS.length],classes:[pick(CLS),pick(CLS)].filter((v,j,a)=>a.indexOf(v)===j),students:rnd(40,60),rating:(rnd(40,50)/10).toFixed(1),status:'Active',color:C8[i%8]}));
+const STUDS=Array.from({length:50},(_,i)=>({id:'STU-'+String(i+1).padStart(4,'0'),name:fullName(),cls:pick(CLS),age:rnd(13,18),att:rnd(72,99),gpa:(rnd(55,98)/10).toFixed(1),fees:pick(['Paid','Paid','Partial','Overdue']),color:getColor(fullName())}));
+const TCHS=Array.from({length:15},(_,i)=>({id:'TCH-'+String(i+1).padStart(3,'0'),name:fullName(),subj:SUBS[i%SUBS.length],classes:[pick(CLS),pick(CLS)].filter((v,j,a)=>a.indexOf(v)===j),students:rnd(40,120),color:getColor(fullName())}));
 
 const MREV=[{m:'Jan',rev:42,users:1240},{m:'Feb',rev:48,users:1380},{m:'Mar',rev:51,users:1490},{m:'Apr',rev:55,users:1620},{m:'May',rev:61,users:1810},{m:'Jun',rev:67,users:2050}];
 const ATT_W=[{d:'Mon',p:810,a:37,l:32},{d:'Tue',p:795,a:52,l:22},{d:'Wed',p:773,a:42,l:54},{d:'Thu',p:820,a:27,l:22},{d:'Fri',p:800,a:47,l:22}];
@@ -191,11 +135,11 @@ const NAV={
   superadmin:[{icon:'layout-dashboard',label:'Dashboard',id:'dashboard'},{icon:'building-2',label:'Schools',id:'schools'},{icon:'users',label:'Users',id:'users'},{icon:'credit-card',label:'Revenue',id:'revenue'}],
   admin:[{icon:'layout-dashboard',label:'Dashboard',id:'dashboard'},{icon:'users',label:'Students',id:'students',badge:847},{icon:'user-check',label:'Teachers',id:'teachers'},{icon:'calendar-check',label:'Attendance',id:'attendance'},{icon:'credit-card',label:'Fees',id:'fees'}],
   teacher:[{icon:'layout-dashboard',label:'Dashboard',id:'dashboard'},{icon:'users',label:'My Students',id:'students'},{icon:'calendar-check',label:'Attendance',id:'attendance'},{icon:'file-plus',label:'Grades',id:'grades'}],
-  student:[{icon:'layout-dashboard',label:'Dashboard',id:'dashboard'},{icon:'calendar',label:'Timetable',id:'timetable'},{icon:'file-text',label:'Assignments',id:'assignments'},{icon:'award',label:'My Results',id:'results'}],
+  student:[{icon:'layout-dashboard',label:'Dashboard',id:'dashboard'},{icon:'calendar',label:'Timetable',id:'timetable'},{icon:'file-text',label:'Assignments',id:'assignments'},{icon:'award',label:'My Grades',id:'grades'}],
   parent:[{icon:'layout-dashboard',label:'Dashboard',id:'dashboard'},{icon:'calendar-check',label:'Attendance',id:'attendance'},{icon:'award',label:'Reports',id:'reports'},{icon:'credit-card',label:'Fees',id:'fees'}]
 };
 const UNAMES={superadmin:'Alex Morgan',admin:'Prince Payne',teacher:'Mr. Kofi Asante',student:'Abena Kyei',parent:'Mrs. Adwoa Kyei'};
-const UTITLES={superadmin:'Super Admin',admin:'School Administrator',teacher:'Mathematics Teacher',student:'Form 3A · Student',parent:"Parent — Abena Kyei"};
+const UTITLES={superadmin:'Super Admin',admin:'School Administrator',teacher:'Mathematics Teacher',student:'Form 3A · Student',parent:'Parent — Abena Kyei'};
 
 function Av({name,color,size=32}){
   const i=(name||'?').split(' ').map(w=>w[0]).slice(0,2).join('');
@@ -245,7 +189,7 @@ function Sidebar({role,page,setPage}){
 }
 
 function Topbar({page,onLogout}){
-  const titles={dashboard:'Dashboard',students:'Students',teachers:'Teachers',attendance:'Attendance',fees:'Fees',analytics:'Analytics',ai:'AI Assistant',messages:'Messages',announcements:'Announcements',profile:'Profile',settings:'Settings'};
+  const titles={dashboard:'Dashboard',students:'Students',teachers:'Teachers',attendance:'Attendance',fees:'Fees',analytics:'Analytics',ai:'AI Assistant',messages:'Messages',announcements:'Announcements',timetable:'Timetable',assignments:'Assignments',grades:'Grades',reports:'Reports',schools:'Schools',users:'Users',revenue:'Revenue'};
   return h('div',{className:'topbar'},
     h('div',null,
       h('div',{className:'topbar-title'},titles[page]||'Page'),
@@ -262,10 +206,10 @@ function Topbar({page,onLogout}){
 function AdminDash({setPage}){
   return h('div',{className:'slide-up'},
     h('div',{className:'stat-grid'},
-      h('div',{className:'stat-card indigo',onClick:()=>setPage('students')},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'👥')),h('div',{className:'stat-value'},'847'),h('div',{className:'stat-label'},'Total Students'),h('div',{className:'stat-change up'},'+12% vs last term')),
-      h('div',{className:'stat-card emerald',onClick:()=>setPage('teachers')},h('div',{className:'stat-icon',style:{background:'#dcfce7'}},h('span',{style:{fontSize:20}},'👩‍🏫')),h('div',{className:'stat-value'},'42'),h('div',{className:'stat-label'},'Teachers'),h('div',{className:'stat-change up'},'+2 new staff')),
-      h('div',{className:'stat-card amber',onClick:()=>setPage('attendance')},h('div',{className:'stat-icon',style:{background:'#fef9c3'}},h('span',{style:{fontSize:20}},'📅')),h('div',{className:'stat-value'},'91%'),h('div',{className:'stat-label'},'Avg. Attendance'),h('div',{className:'stat-change up'},'+3% today')),
-      h('div',{className:'stat-card violet',onClick:()=>setPage('fees')},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'💳')),h('div',{className:'stat-value'},'GHS 45K'),h('div',{className:'stat-label'},'Fees Collected'),h('div',{className:'stat-change up'},'+8% this month'))
+      h('div',{className:'stat-card indigo',onClick:()=>setPage('students')},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'👥')),h('div',{className:'stat-value'},'847'),h('div',{className:'stat-label'},'Total Students'),h('div',{className:'stat-change up'},'↑ 12 this month')),
+      h('div',{className:'stat-card emerald',onClick:()=>setPage('teachers')},h('div',{className:'stat-icon',style:{background:'#dcfce7'}},h('span',{style:{fontSize:20}},'👩‍🏫')),h('div',{className:'stat-value'},'42'),h('div',{className:'stat-label'},'Staff'),h('div',{className:'stat-change up'},'↑ 3 new')),
+      h('div',{className:'stat-card amber',onClick:()=>setPage('attendance')},h('div',{className:'stat-icon',style:{background:'#fef9c3'}},h('span',{style:{fontSize:20}},'📅')),h('div',{className:'stat-value'},'94%'),h('div',{className:'stat-label'},'Avg Attendance'),h('div',{className:'stat-change up'},'↑ 2%')),
+      h('div',{className:'stat-card violet',onClick:()=>setPage('fees')},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'💳')),h('div',{className:'stat-value'},'87%'),h('div',{className:'stat-label'},'Fees Collected'),h('div',{className:'stat-change dn'},'↓ 5%'))
     ),
     h('div',{className:'g21'},
       h(Card,null,
@@ -323,16 +267,16 @@ function AdminDash({setPage}){
 function StudentDash(){
   return h('div',{className:'slide-up'},
     h('div',{className:'stat-grid'},
-      h('div',{className:'stat-card emerald',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#dcfce7'}},h('span',{style:{fontSize:20}},'📅')),h('div',{className:'stat-value'},'94%'),h('div',{className:'stat-label'},'Attendance')),
-      h('div',{className:'stat-card indigo',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'🏆')),h('div',{className:'stat-value'},'3.8'),h('div',{className:'stat-label'},'GPA')),
-      h('div',{className:'stat-card amber',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#fef9c3'}},h('span',{style:{fontSize:20}},'📋')),h('div',{className:'stat-value'},'6'),h('div',{className:'stat-label'},'Assignments')),
-      h('div',{className:'stat-card violet',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'📈')),h('div',{className:'stat-value'},'#4'),h('div',{className:'stat-label'},'Class Rank'))
+      h('div',{className:'stat-card emerald',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#dcfce7'}},h('span',{style:{fontSize:20}},'📅')),h('div',{className:'stat-value'},'98%'),h('div',{className:'stat-label'},'Attendance')),
+      h('div',{className:'stat-card indigo',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'🏆')),h('div',{className:'stat-value'},'92'),h('div',{className:'stat-label'},'GPA')),
+      h('div',{className:'stat-card amber',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#fef9c3'}},h('span',{style:{fontSize:20}},'📋')),h('div',{className:'stat-value'},'4'},h('div',{className:'stat-label'},'Assignments Due')),
+      h('div',{className:'stat-card violet',style:{cursor:'default'}},h('div',{className:'stat-icon',style:{background:'#ede9fe'}},h('span',{style:{fontSize:20}},'📈')),h('div',{className:'stat-value'},'A-')),h('div',{className:'stat-label'},'Current Grade'))
     ),
     h('div',{className:'g21'},
       h(Card,null,
         h(CardHeader,{title:'My Grades',action:'Full report card'}),
         h('div',{className:'card-body'},
-          SUBS.slice(0,6).map((sub,i)=>{const sc=rnd(65,98);const g=sc>=90?'A':sc>=80?'B+':sc>=70?'B':'C';const cl=sc>=80?'#16a34a':sc>=70?'#d97706':'#dc2626';return h('div',{key:i,className:'prog-wrap'},h('div',{className:'prog-top'},h('span',{className:'prog-label'},sub.split(' ')[0]),h('span',{className:'prog-pct',style:{color:cl}},sc+'%')),h('div',{className:'prog-track'},h('div',{className:'prog-fill',style:{width:sc+'%',background:cl}}))); })
+          SUBS.slice(0,6).map((sub,i)=>{const sc=rnd(65,98);const g=sc>=90?'A':sc>=80?'B+':sc>=70?'B':'C';const cl=sc>=80?'#16a34a':sc>=70?'#d97706':'#dc2626';return h('div',{key:i,className:'prog-wrap'},h('div',{className:'prog-top'},h('span',{className:'prog-label'},sub),h('span',{style:{fontWeight:700,color:cl}},g)),h('div',{className:'prog-track'},h('div',{className:'prog-fill',style:{width:sc+'%',background:cl}})))})
         )
       ),
       h(Card,null,
@@ -360,11 +304,11 @@ function StudentsPage(){
   return h('div',{className:'slide-up'},
     h('div',{style:{display:'flex',alignItems:'center',justifyContent:'space-between',marginBottom:14,flexWrap:'wrap',gap:8}},
       h('div',{style:{display:'flex',gap:6}},
-        ['All','Form 1','Form 2','Form 3'].map(f=>h('button',{key:f,onClick:()=>setFilter(f),style:{padding:'6px 14px',borderRadius:8,fontSize:12,fontWeight:600,border:'1.5px solid '+(filter===f?'#6366f1':'#e2e8f0'),background:filter===f?'#ede9fe':'transparent',color:filter===f?'#6366f1':'#64748b',cursor:'pointer',fontFamily:'inherit'}}))
+        ['All','Form 1','Form 2','Form 3'].map(f=>h('button',{key:f,onClick:()=>setFilter(f),style:{padding:'6px 14px',borderRadius:8,fontSize:12,fontWeight:600,border:'1.5px solid '+(filter===f?'#6366f1':'#e2e8f0'),background:filter===f?'#ede9fe':'transparent',color:filter===f?'#6366f1':'#64748b',cursor:'pointer',fontFamily:'inherit',transition:'all .2s'}},f))
       ),
       h('div',{style:{display:'flex',gap:8,alignItems:'center'}},
-        h('input',{value:search,onChange:e=>setSearch(e.target.value),placeholder:'🔍 Search students...',style:{padding:'7px 12px',border:'1px solid #e2e8f0',borderRadius:10,fontSize:12,outline:'none',fontFamily:'inherit',width:200}}),
-        h('button',{style:{display:'flex',alignItems:'center',gap:6,padding:'7px 14px',background:'#6366f1',color:'#fff',border:'none',borderRadius:10,fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:'inherit'}},'+ Add')
+        h('input',{value:search,onChange:e=>setSearch(e.target.value),placeholder:'🔍 Search students...',style:{padding:'7px 12px',border:'1px solid #e2e8f0',borderRadius:10,fontSize:12,outline:'none',fontFamily:'inherit'}}),
+        h('button',{style:{display:'flex',alignItems:'center',gap:6,padding:'7px 14px',background:'#6366f1',color:'#fff',border:'none',borderRadius:10,fontSize:12,fontWeight:600,cursor:'pointer',fontFamily:'inherit'}},h(LI,{name:'plus',size:14,color:'#fff'}),'Add')
       )
     ),
     h(Card,null,
@@ -410,7 +354,7 @@ function App(){
     h('div',{className:'main'},
       h('div',{className:'role-bar'},
         h('span',{className:'role-bar-label'},'Switch role:'),
-        ROLES.map(r=>h('button',{key:r.id,className:'role-chip',onClick:()=>{setRole(r.id);setPage('dashboard');},style:{background:role===r.id?r.color:'transparent',color:role===r.id?'#fff':r.color,border:'1px solid '+(role===r.id?r.color:'transparent')}},' '+r.label+' '))
+        ROLES.map(r=>h('button',{key:r.id,className:'role-chip',onClick:()=>{setRole(r.id);setPage('dashboard');},style:{background:role===r.id?r.color:'transparent',color:role===r.id?'#fff':r.color,borderColor:r.color}},r.label))
       ),
       h(Topbar,{page,onLogout:()=>alert('Logged out!')}),
       h('div',{className:'content'},renderPage())
